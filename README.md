@@ -5,12 +5,15 @@
 > Simple CRUD APP in using node js and mongo db
 
 
-# Installation
+# Set up
 
 ```
-npm install mongo-learn
+npm install 
 ```
 
+```
+npm start
+```
 
 
 
@@ -18,10 +21,3 @@ npm install mongo-learn
 
 `mongo-learn` is published under the ISC-license.
 
-No file "LICENSE*" found
-
-
- 
-# Contributing guidelines
-
-See [CONTRIBUTING.md](CONTRIBUTING.md).
