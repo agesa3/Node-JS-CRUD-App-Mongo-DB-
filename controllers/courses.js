@@ -24,16 +24,10 @@ router.post("/add", (req, res) => {
 });
 
 router.get("/list", (req, res) => {
-  //   var course = new CourseModel();
-  //   course.courseName = "Node Js";
-  //   course.courseId = "2";
-  //   course.save();
-
   CourseModel.find({})
     .lean()
     .exec(function (err, docs) {
       if (!err) {
-        console.log(docs);
         res.render("list", { data: docs });
       }
     });
