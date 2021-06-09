@@ -5,6 +5,8 @@ const path = require("path");
 const expressHandlebars = require("express-handlebars");
 const bodyparser = require("body-parser");
 
+const CourseController=require("./controllers/courses")
+
 app.use(
   bodyparser.urlencoded({
     extended: true,
@@ -28,6 +30,9 @@ app.get("/", (req, res) => {
   //   res.send("<h1>Hello World</h1>");
   res.render("index", {});
 });
+
+app.use("/courses",CourseController)
+
 
 app.listen("5000", () => {
   console.log("Server Listening on port 5000");
